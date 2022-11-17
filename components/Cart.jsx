@@ -6,13 +6,11 @@ import toast from 'react-hot-toast';
 
 import { useStateContext } from '../context/StateContext';
 import { urlFor } from '../lib/client';
-// import getStripe from '../lib/getStripe';
+import getStripe from '../lib/getStripe';
 
 const Cart = () => {
   const cartRef = useRef();
   const { totalPrice, totalQuantities, cartItems, setShowCart, toggleCartItemQuanitity, onRemove } = useStateContext();
-
-const price = Math.round(totalPrice * 100) / 100
 
   const handleCheckout = async () => {
     const stripe = await getStripe();
@@ -40,8 +38,7 @@ const price = Math.round(totalPrice * 100) / 100
         <button
         type="button"
         className="cart-heading"
-        onClick={() => setShowCart(false)}
-        >
+        onClick={() => setShowCart(false)}>
           <AiOutlineLeft />
           <span className="heading">Your Cart</span>
           <span className="cart-num-items">({totalQuantities} items)</span>
@@ -70,7 +67,7 @@ const price = Math.round(totalPrice * 100) / 100
               <div className="item-desc">
                 <div className="flex top">
                   <h5>{item.name}</h5>
-                  <h4>{item.price}€</h4>
+                  <h4>${item.price}</h4>
                 </div>
                 <div className="flex bottom">
                   <div>
@@ -98,7 +95,7 @@ const price = Math.round(totalPrice * 100) / 100
           <div className="cart-bottom">
             <div className="total">
               <h3>Subtotal:</h3>
-              <h3>{price}€</h3>
+              <h3>${totalPrice}</h3>
             </div>
             <div className="btn-container">
               <button type="button" className="btn" onClick={handleCheckout}>
