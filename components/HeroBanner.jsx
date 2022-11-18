@@ -1,4 +1,5 @@
 import React from "react";
+
 //import Link from "next/link";
 
 import { urlFor } from "../lib/client";
@@ -12,11 +13,12 @@ const HeroBanner = ({ heroBanner }) => {
         <p className="beats-solo">{heroBanner.smallText}</p>
         <h3>{heroBanner.midText}</h3>
         <h1>{heroBanner.largeText1}</h1>
-        <img
+        {/* <img
           src={urlFor(heroBanner.image)}
           alt="headphones"
           className="hero-banner-image"
-        />
+        /> */}
+        {/* <img src="https://my.spline.design/roomrelaxingcopy-0dabb635497335bc9c3ab49f2be274f1/" alt="" /> */}
 
         {/* <div>
           <Link href={`/product/${heroBanner.slug.current}`}>

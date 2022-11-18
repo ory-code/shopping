@@ -12,6 +12,8 @@
     "@sanity/cli": "^2.35.0",
     "@sanity/client": "^3.4.1",
     "@sanity/image-url": "^1.0.1",
+    "@splinetool/react-spline": "^2.2.3",
+    "@splinetool/runtime": "^0.9.142",
     "@stripe/stripe-js": "^1.44.1",
     "canvas-confetti": "^1.6.0",
     "eslint": "8.27.0",
