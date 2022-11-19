@@ -1,0 +1,14 @@
+.navbar-container {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    height: 55px;
+    color: white;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.logo p {
+    font-size: 2.2rem;
+}
+

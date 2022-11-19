@@ -5,6 +5,9 @@ body, * {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   box-sizing: border-box;
+  /* background-color: black */
+  color: black;
+  font-size: 62.5%;
 
 }
 ::-webkit-scrollbar {
@@ -14,5 +17,14 @@ body, * {
 a {
   color: inherit;
   text-decoration: none;
+  background-color: transparent;
 }
 
+button {
+  border: none;
+  background: transparent;
+  text-decoration: none;
+}
+.main-container {
+width: 100%;
+}
