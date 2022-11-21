@@ -5,6 +5,9 @@ import { Layout } from '../components';
  import '../styles/globals.css';
  import "../styles/navbar.css"
  import "../styles/banner.css"
+ import "../styles/mainPage.css"
+ import "../styles/product.css"
+ import "../styles/footer.css"
 
 
 import { StateContext } from '../context/StateContext';

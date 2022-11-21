@@ -1,14 +1,21 @@
 .navbar-container {
-    width: 100%;
-    background-color: white;
-    display: flex;
-    height: 55px;
-    color: white;
-    justify-content: space-between;
-    padding: 10px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  height: 55px;
+  color: white;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10rem;
+}
+.logo {
+  font-size: 8rem
 }
 
-.logo p {
-    font-size: 2.2rem;
-}
 
+@media screen and (min-width: 768px) {
+  .navbar-container {
+    margin-bottom: 12rem;
+  }
+
+}

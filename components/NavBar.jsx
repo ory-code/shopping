@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 // import { AiOutlineShopping } from 'react-icons/ai'
-
+import logo from "../public/like.png";
 import { Cart } from "./";
 import { useStateContext } from "../context/StateContext";
 
@@ -9,6 +9,7 @@ import Badge from "@mui/material/Badge";
 import { styled } from "@mui/material/styles";
 import IconButton from "@mui/material/IconButton";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import Image from "next/image";
 
 const Navbar = () => {
   const { showCart, setShowCart, totalQuantities } = useStateContext();
@@ -26,7 +27,7 @@ const Navbar = () => {
     return (
       <IconButton aria-label="cart">
         <StyledBadge badgeContent={totalQuantities} color="secondary">
-          <ShoppingCartIcon />
+          <ShoppingCartIcon sx={{ fontSize: 30 }} />
         </StyledBadge>
       </IconButton>
     );
@@ -35,20 +36,18 @@ const Navbar = () => {
     <nav className="navbar-container">
       <div className="logo">
         <Link href="/">
-          <p>
-            Sacha Shop
-          </p>
+          {/* <Image src={logo} alt="logo sacha" width="100" height="100" /> */}
+          <p>Sacha shopping</p>
         </Link>
       </div>
 
-      {/* <button
-        type="button"
-        className="cart-icon"
-        onClick={() => setShowCart(true)}
-      > */}
-        <CustomizedBadges  />
-        {/* <span className="cart-item-qty">{totalQuantities}</span> */}
-      {/* </button> */}
+      <button
+        // type="button"
+        // className="cart-icon"
+        // onClick={() => setShowCart(true)}
+      >
+        <CustomizedBadges />
+      </button>
 
       {showCart && <Cart />}
     </nav>

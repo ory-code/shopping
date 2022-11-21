@@ -56,7 +56,7 @@ const MyImageList = () => {
   ];
   return (
     <>
-      <Box sx={{ width: 500, height: 450, overflowY: "scroll" }}>
+      <Box sx={{ maxWidth: "1200px", margin: "0 auto", overflowY: "scroll" }}>
         <ImageList variant="masonry" cols={3} gap={8}>
           {itemData.map((item) => (
             <ImageListItem key={item.img}>

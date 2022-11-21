@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "Melody-book";
+  src: url('../public/font/melody/BLMelodyMono-Book.woff2');
+}
+@font-face {
+  font-family: "Melody-mono";
+  src: url('../public/font/melody/BLMelodyMono-Medium.woff2');
+}
+@font-face {
+  font-family: "Melody";
+  src: url('../public/font/melody/BLMelody-Regular.woff2');
+}
+
+
 html,
 body, * {
   padding: 0;
@@ -27,4 +41,7 @@ button {
 }
 .main-container {
 width: 100%;
+}
+ul li {
+  list-style-type: none;
 }
