@@ -1,0 +1,136 @@
+.cart__wrapper {
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  right: 0;
+  left: 0;
+  text-align: center;
+  align-items: center;
+  top: 0;
+  z-index: 100;
+  will-change: transform;
+  transition: all 1s ease-in-out;
+  display: flex;
+  justify-content: center;
+}
+.cart__container {
+  min-height: 100vh;
+  width: 300px;
+  background-color: rgb(255, 255, 255);
+  float: right;
+  padding: 40px 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .cart__container {
+    max-width: 600px;
+    width: 100%;
+  }
+
+  .btns__cart {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 1rem 0;
+    text-align: center;
+  }
+  .cart__btn:last-child {
+    background-color: #212121;
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .cart__container {
+    max-width: 700px;
+    width: 100%;
+  }
+  .qty__container {
+    width: 600px;
+    margin: 0 auto;
+   
+  }
+  .qty__content {
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+    
+  }
+
+}
+/* EMPTY CART */
+.empty__cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.empty__cart__title {
+  font-size: 2.5rem;
+  margin: 2rem 0;
+}
+.empty__cart__btn {
+  margin-top: 2rem;
+  font-size: 2rem;
+  background-color: #212121;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  font-family: "Melody";
+  cursor: pointer;
+}
+/* CART */
+.cart__product__container {
+  
+  margin: 5rem 0;
+}
+.cart__product__image {
+  object-fit: contain;
+  max-width: 250px;
+}
+.cart__item__desc {
+  padding: 1rem 1.5rem;
+}
+.cart__item__title,
+.cart__item__price {
+  font-size: 2.5rem;
+  margin: 2rem 0;
+}
+.qty__container {
+  
+  padding: 1rem 1.5rem;
+  text-align: center;
+}
+.qty__content {
+
+margin: 0 auto;
+  
+}
+.qty__content span {
+ 
+margin: 0 2rem;
+  
+}
+.cart__bottom {
+  padding: 1.5rem 1.5rem;
+}
+.total {
+  display: flex;
+  font-size: 3.4rem;
+  justify-content: space-between;
+}
+.btns__cart {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    
+}
+.cart__btn {
+  font-size: 2.5rem;
+  background-color: rgba(0, 128, 0, 0.505);
+  margin: 2rem 0;
+  padding: 1rem;
+  font-family: "Melody";
+  cursor: pointer;
+}

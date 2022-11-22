@@ -15,13 +15,14 @@ const ProductDetails = ({ product, products }) => {
 
     setShowCart(true);
   }
-
+  
   return (
     <div>
-      <div className="product-detail-container">
+      
+      <div className="slug__container">
         <div>
-          <div className="image-container">
-            <img src={urlFor(image && image[0])} className="product-detail-image" />
+          <div className="image__container">
+            <img src={urlFor(image && image[0])} className="slug__image" />
           </div>
           {/* <div className="small-images-container">
             {image?.map((item, i) => (
@@ -34,10 +35,10 @@ const ProductDetails = ({ product, products }) => {
             ))}
           </div> */}
         </div>
-
-        <div className="product-detail-desc">
-          <h1>{name}</h1>
-          <div className="reviews">
+<div className="slug__desc__container"> 
+        <div className="slug__desc">
+          <h1 className="slug__title" >{name}</h1>
+          {/* <div className="reviews">
             <div>
               <AiFillStar />
               <AiFillStar />
@@ -48,26 +49,27 @@ const ProductDetails = ({ product, products }) => {
             <p>
               (20)
             </p>
-          </div>
-          <h4>Details: </h4>
-          <p>{details}</p>
+          </div> */}
+          {/* <h2 className="slug__subtitle" >Details: </h2> */}
+          <p className="slug__details" >{details}</p>
           <p className="price">{price}€</p>
           <div className="quantity">
-            <h3>Quantity:</h3>
-            <p className="quantity-desc">
+            <h3 className="quantity__title" >Quantity:</h3>
+            <div className="quantity__desc">
               <span className="minus" onClick={decQty}><AiOutlineMinus /></span>
-              <span className="num">{qty}</span>
+              <span type="number" className="num">{qty}</span>
               <span className="plus" onClick={incQty}><AiOutlinePlus /></span>
-            </p>
+            </div>
           </div>
-          <div className="buttons">
-            <button type="button" className="add-to-cart" onClick={() => onAdd(product, qty)}>Add to Cart</button>
-            <button type="button" className="buy-now" onClick={handleBuyNow}>Buy Now</button>
+          <div className="slug__buttons">
+            <button type="button" className="add__to__cart" onClick={() => onAdd(product, qty)}>Add to Cart</button>
+            <button type="button" className="buy__now" onClick={handleBuyNow}>Buy Now</button>
           </div>
         </div>
+</div>
       </div>
 
-      <div className="maylike-products-wrapper">
+      {/* <div className="maylike-products-wrapper">
           <h2>You may also like</h2>
           <div className="marquee">
             <div className="maylike-products-container track">
@@ -76,7 +78,7 @@ const ProductDetails = ({ product, products }) => {
               ))}
             </div>
           </div>
-      </div>
+      </div> */}
     </div>
   )
 }
