@@ -28,8 +28,11 @@
 
 @media screen and (min-width: 768px) {
   .footer__content {
-    flex-direction: initial;
+    
     align-items: inherit;
-    justify-content: space-around;
+  }
+  .footer__info {
+    margin: 0 auto;
+   margin-left: 60%;
   }
 }
