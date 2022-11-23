@@ -1,14 +1,14 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
-import { toast } from "react-hot-toast";
-import Button from "@mui/material/Button";
-import Snackbar from "@mui/material/Snackbar";
-import MuiAlert from "@mui/material/Alert";
-import Stack from "@mui/material/Stack";
+//import { toast } from "react-hot-toast";
+// import Button from "@mui/material/Button";
+// import Snackbar from "@mui/material/Snackbar";
+//import MuiAlert from "@mui/material/Alert";
+//import Stack from "@mui/material/Stack";
 const Context = createContext();
 
-const Alert = React.forwardRef(function Alert(props, ref) {
-  return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
-});
+// const Alert = React.forwardRef(function Alert(props, ref) {
+//   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+// });
 
 export const StateContext = ({ children }) => {
   const [showCart, setShowCart] = useState(false);
@@ -70,7 +70,7 @@ export const StateContext = ({ children }) => {
       setCartItems([...cartItems, { ...product }]);
     }
 
-     toast.success(`${qty} ${product.name} added to the cart.`);
+     //toast.success(`${qty} ${product.name} added to the cart.`);
     
   };
 
