@@ -1,0 +1,25 @@
+.canceled__container {
+    min-height: 50vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  
+}
+
+.back {
+    font-size: 2rem;
+    background-color: #212121;
+    color: #fff;
+    width: 185px;
+    padding: 2rem 1.5rem;
+    border-radius: 30px;
+    margin: 3rem 0;
+    cursor: pointer;
+}
+.back:hover {
+    transform: scale(1.1);
+    transition:  ease-out 0.8s;
+}

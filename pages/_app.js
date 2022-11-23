@@ -10,6 +10,7 @@ import { Layout } from '../components';
  import "../styles/footer.css"
 import "../styles/slug.css"
 import "../styles/cart.css"
+import "../styles/canceled.css"
 
 import { StateContext } from '../context/StateContext';
 

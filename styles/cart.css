@@ -18,13 +18,25 @@
   width: 300px;
   background-color: rgb(255, 255, 255);
   float: right;
-  padding: 40px 10px;
+  padding: 10px 10px;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   flex-direction: column;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .cart__product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cart__product__image {
+    max-height: 130px;
+  }
+
   .cart__container {
     max-width: 600px;
     width: 100%;
@@ -32,14 +44,16 @@
 
   .btns__cart {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     width: 100%;
     margin: 1rem 0;
     text-align: center;
+    justify-content: space-between;
   }
+
+  .cart__btn,
   .cart__btn:last-child {
-    background-color: #212121;
-    color: #fff;
+    width: auto;
   }
 }
 
@@ -51,15 +65,20 @@
   .qty__container {
     width: 600px;
     margin: 0 auto;
-   
   }
   .qty__content {
     display: block;
     width: 500px;
     margin: 0 auto;
-    
   }
-
+  .btns__cart {
+    display: flex;
+    /* flex-direction: row; */
+    width: 100%;
+    margin: 1rem 0;
+    text-align: center;
+    justify-content: space-evenly;
+  }
 }
 /* EMPTY CART */
 .empty__cart {
@@ -83,11 +102,11 @@
 /* CART */
 .cart__product__container {
   
-  margin: 5rem 0;
 }
 .cart__product__image {
   object-fit: contain;
-  max-width: 250px;
+  width: 140px;
+  height: 140px;
 }
 .cart__item__desc {
   padding: 1rem 1.5rem;
@@ -98,19 +117,14 @@
   margin: 2rem 0;
 }
 .qty__container {
-  
   padding: 1rem 1.5rem;
   text-align: center;
 }
 .qty__content {
-
-margin: 0 auto;
-  
+  margin: 0 auto;
 }
 .qty__content span {
- 
-margin: 0 2rem;
-  
+  margin: 0 2rem;
 }
 .cart__bottom {
   padding: 1.5rem 1.5rem;
@@ -121,10 +135,9 @@ margin: 0 2rem;
   justify-content: space-between;
 }
 .btns__cart {
-    display: flex;
-    flex-direction: column;
-    margin: 2rem 0;
-    
+  /* display: flex;
+    flex-direction: column; */
+  margin: 2rem 0;
 }
 .cart__btn {
   font-size: 2.5rem;
@@ -133,4 +146,8 @@ margin: 0 2rem;
   padding: 1rem;
   font-family: "Melody";
   cursor: pointer;
+}
+.cart__btn:last-child {
+  background-color: #212121;
+  color: white;
 }

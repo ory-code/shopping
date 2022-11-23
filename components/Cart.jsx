@@ -53,7 +53,12 @@ const Cart = () => {
           <div className="empty__cart">
             <h2 className="empty__cart__title">Your shopping bag is empty</h2>
             {/* <AiOutlineShopping size={150} /> */}
-            <Image src={empty} width={290} height={290} />
+            <Image
+              src={empty}
+              width={290}
+              height={290}
+              alt="funny gif john travolta"
+            />
 
             <button
               type="button"
@@ -83,20 +88,20 @@ const Cart = () => {
                   <div className="qty__container">
                     <div className="qty__content">
                       <span
-                        className="plus"
-                        onClick={() => toggleCartItemQuanitity(item._id, "inc")}
-                      >
-                        <AiOutlinePlus />
-                      </span>
-
-                      <span type="number" className="num" onClick="">
-                        {item.quantity}
-                      </span>
-                      <span
                         className="minus"
                         onClick={() => toggleCartItemQuanitity(item._id, "dec")}
                       >
                         <AiOutlineMinus />
+                      </span>
+                      <span type="number" className="num" onClick="">
+                        {item.quantity}
+                      </span>
+
+                      <span
+                        className="plus"
+                        onClick={() => toggleCartItemQuanitity(item._id, "inc")}
+                      >
+                        <AiOutlinePlus />
                       </span>
                     </div>
                   </div>
@@ -110,7 +115,7 @@ const Cart = () => {
                 </div>
               </div>
             ))}
-        </div>
+        
         {cartItems.length >= 1 && (
           <div className="cart__bottom">
             <div className="total">
@@ -137,6 +142,7 @@ const Cart = () => {
             </div>
           </div>
         )}
+        </div>
       </div>
     </div>
   );
