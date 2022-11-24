@@ -1,6 +1,6 @@
 import React from "react";
 import { client } from "../lib/client";
-import { Product, Footer, Nav } from "../components";
+import { Product, Footer, Navbar,  } from "../components";
 import Head from "next/head";
 const Home = ({ products, bannerData }) => (
   <div>
@@ -8,7 +8,7 @@ const Home = ({ products, bannerData }) => (
       <title>Sacha Shopping</title>
       <meta property="og:title" content="Sacha Shopping" key="title" />
     </Head>
-    <Nav />
+    <Navbar />
     <div className="heading">
       <div className="custom-shape-divider-top-1669022201">
         <svg
