@@ -1,6 +1,7 @@
 import React from "react";
 import { client } from "../lib/client";
-import { Product, Footer, Navbar,  } from "../components";
+import { Product, Footer,  } from "../components";
+import Navbar from "../components/NavBar";
 import Head from "next/head";
 const Home = ({ products, bannerData }) => (
   <div>
