@@ -1,11 +1,6 @@
 import React from "react";
 import { client } from "../lib/client";
-import {
-  Product,
-
-  Footer,
-  Navbar,
-} from "../components";
+import { Product, Footer, Nav } from "../components";
 import Head from "next/head";
 const Home = ({ products, bannerData }) => (
   <div>
@@ -13,7 +8,7 @@ const Home = ({ products, bannerData }) => (
       <title>Sacha Shopping</title>
       <meta property="og:title" content="Sacha Shopping" key="title" />
     </Head>
-    <Navbar />
+    <Nav />
     <div className="heading">
       <div className="custom-shape-divider-top-1669022201">
         <svg
@@ -42,7 +37,7 @@ const Home = ({ products, bannerData }) => (
     </div>
     {/* <MyImageList/> */}
     {/* <HeroBanner heroBanner={bannerData.length && bannerData[0]} /> */}
-    <Footer/>
+    <Footer />
   </div>
 );
 
