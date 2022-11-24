@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-icons/ai';
 
 import { client, urlFor } from '../../lib/client';
-import { Product } from '../../components';
+import { Footer, Navbar, Product } from '../../components';
 import { useStateContext } from '../../context/StateContext';
 
 const ProductDetails = ({ product, products }) => {
@@ -18,7 +18,7 @@ const ProductDetails = ({ product, products }) => {
   
   return (
     <div>
-      
+      <Navbar/>
       <div className="slug__container">
         <div>
           <div className="image__container">
@@ -79,6 +79,7 @@ const ProductDetails = ({ product, products }) => {
             </div>
           </div>
       </div> */}
+      <Footer/>
     </div>
   )
 }

@@ -47,12 +47,12 @@ ul li {
 }
 
 /*succes*/
-.success-wrapper, .cancel-wrapper{
+.success-wrapper{
   background-color: white;
   min-height: 60vh;
-
+display: flex;
 }
-.success, .cancel{
+.success{
   width: 1000px;
 margin: auto;
 margin-top: 160px;
@@ -95,4 +95,14 @@ margin-top: 160px;
 .success .description .email{
   margin-left: 5px;
   color: #f02d34;
+  font-size: 1.5rem;
+}
+.btn__succces {
+  margin-top: 2rem;
+  font-size: 2rem;
+  background-color: rgba(0, 128, 0, 0.505);
+  padding: 2rem 1rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+
 }
